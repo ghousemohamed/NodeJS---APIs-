@@ -4,17 +4,17 @@ const morgan = require('morgan');
 const connectDB = require('./config/db');
 const colors = require('colors');
 const errorHandler = require('./middleware/error');
-//Route files
-
-const bootcamps = require('./routes/bootcamps');
-
+ 
 // load env variables
+dotenv.config({path: './config/config.env'}); 
 
-dotenv.config({path: './config/config.env'});
+//Route files
+const bootcamps = require('./routes/bootcamps');
 
 // Connect to database
 connectDB();
 
+//express server
 const app = express();
 
 // Body parser
