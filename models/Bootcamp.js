@@ -144,4 +144,4 @@ BootcampSchema.virtual('courses', {
     justOne: false
 })
 
-module.exports = Bootcamp = mongoose.model('Bootcamp', BootcampSchema);
+module.exports = Bootcamp = mongoose.model('bootcamp', BootcampSchema);
