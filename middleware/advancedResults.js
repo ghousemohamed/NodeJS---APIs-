@@ -73,7 +73,7 @@ const advancedResults = (model, populate) => async(req, res, next) => {
       data: results
   }
 
-  next()
+  next();
 }
 
 module.exports = advancedResults;
